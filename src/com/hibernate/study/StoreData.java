@@ -18,11 +18,19 @@ public class StoreData {
 		Transaction t = session.beginTransaction();
 		
 		Employee e1 = new Employee();
-		e1.setId(1115);
+		e1.setId(61);
 		e1.setFirstName("Kim");
 		e1.setLastName("myy");
 		
+		EmployeeAnnotation e2 = new EmployeeAnnotation();
+		e2.setId(62);
+		e2.setFirstName("kim");
+		e2.setLastName("dayeon");
+		
+		
 		session.persist(e1);
+		session.persist(e2);
+		
 		
 		t.commit();
 		session.close();

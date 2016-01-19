@@ -13,7 +13,8 @@
 		<property name="connection.password">test</property>
 		<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
 		
-		<mapping resource="employee.hbm.xml"/>
+		<mapping resource="employee.hbm.xml"/> <!-- xml로 mapping -->
+		<mapping class="com.hibernate.study.EmployeeAnnotation"/> <!-- annotation 적용한 Domain으로 mapping -->
 	</session-factory>
 
 </hibernate-configuration>  
